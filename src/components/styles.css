@@ -1,0 +1,37 @@
+.divButtonClickOne {
+    position: absolute;
+    top: 49%;
+    left: 34%;
+}
+
+.buttonOne {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    width: 160px;
+    height: 47px;
+}
+
+.buttonOne:hover {
+    border: none !important;
+
+}
+
+.divButtonClickTwo {
+    position: absolute;
+    top: 49%;
+    left: 73%;
+}
+
+.buttonTwo {
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    width: 160px;
+    height: 47px;
+
+}
+
+.img {
+    width: 100%;
+}

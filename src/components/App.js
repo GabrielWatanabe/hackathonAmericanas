@@ -1,26 +1,46 @@
 import React, { Component } from "react";
-import header from "../assets/img/headerAmericanas.PNG";
+import header from "../assets/img/header.PNG";
+import headerAmericanas from "../assets/img/headerAmericanas.PNG";
 import Surpreenda from "./meSurpreenda";
-import { Route, Routes, Link, BrowserRouter } from "react-router-dom";
-import ProfileRouter from "./profile/ProfileRouter";
-import styles from "./App.module.css";
+import "./styles.css";
 
 export default class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      clicked: false,
+    };
+    this.showSurpreenda = this.showSurpreenda.bind(this);
+  }
+
+  showSurpreenda() {
+    console.log(this.state.clicked);
+    this.setState({
+      clicked: true,
+    });
+  }
+
   render() {
     return (
-      <div className={styles.mainAppDiv}>
-        <BrowserRouter>
-          <img src={header}></img>
-          <Routes>
-            <Route path="/" element={<Surpreenda></Surpreenda>} />
-          </Routes>
-          <Link
-            to="/profile"
-            element={<ProfileRouter />}
-            className={styles.profileOnClick}
-          />
-          {/* <Surpreenda></Surpreenda> */}
-        </BrowserRouter>
+      <div>
+        {this.state.clicked ? (
+          <Surpreenda />
+        ) : (
+          <div>
+            <img className="img" src={header}></img>
+            <img className="img" src={headerAmericanas}></img>
+            <div className="divButtonClickOne">
+              <button
+                onClick={this.showSurpreenda}
+                className="buttonOne"
+              ></button>
+            </div>
+            <div className="divButtonClickTwo">
+              <button className="buttonTwo"></button>
+            </div>
+          </div>
+        )}
       </div>
     );
   }
