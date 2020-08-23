@@ -44,7 +44,6 @@ export default class App extends Component {
             </div>
           </div>
         </Switch>
-        )}
       </div>
     </Router>
     );
