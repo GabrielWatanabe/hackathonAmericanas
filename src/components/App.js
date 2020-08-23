@@ -3,6 +3,7 @@ import header from "../assets/img/header.PNG";
 import headerAmericanas from "../assets/img/headerAmericanas.PNG";
 import Surpreenda from "./meSurpreenda";
 import "./styles.css";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export default class App extends Component {
   constructor() {
@@ -23,25 +24,29 @@ export default class App extends Component {
 
   render() {
     return (
+    <Router>
       <div>
-        {this.state.clicked ? (
-          <Surpreenda />
-        ) : (
-          <div>
+        <Switch>
+            <Route path="/surpreenda" component={Surpreenda} />
+            <div>
             <img className="img" src={header}></img>
             <img className="img" src={headerAmericanas}></img>
             <div className="divButtonClickOne">
-              <button
-                onClick={this.showSurpreenda}
-                className="buttonOne"
-              ></button>
+                <Link to="/surpreenda">
+                  <button
+                    onClick={this.showSurpreenda}
+                    className="buttonOne"
+                  />
+                </Link>
             </div>
             <div className="divButtonClickTwo">
-              <button className="buttonTwo"></button>
+                <button className="buttonTwo"></button>
             </div>
           </div>
+        </Switch>
         )}
       </div>
+    </Router>
     );
   }
 }

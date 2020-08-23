@@ -10,11 +10,11 @@ export default class Surpreenda extends Component {
             <img className="img" src={header}></img>
                 <div className="header">
                     <div className="filter">
-                       <h1>Qaunto você quer pagar?</h1>
-                       <label>R$</label>
-                       <input type="text"></input>
-                       <h1>Qaul tipo de item você quer?</h1>
-                       <input type="text"></input>
+                       <h1>Quanto você quer pagar?</h1>
+                       <label className="dollarSign">R$</label>
+                       <input className="inputPay" type="text"></input>
+                       <h1>Qual tipo de item você quer?</h1>
+                       <input className="inputPay" type="text"></input>
                     </div>
                     <div className="vl"></div>
                     <div>

@@ -16,9 +16,21 @@
 .filter {
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
 }
 
 .vl {
     border-left: 2px solid green;
     height: 200px;
+    margin-right: 30px;
+  }
+
+  .inputPay {
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+
+  .dollarSign {
+      margin-right: 5px;
   }
