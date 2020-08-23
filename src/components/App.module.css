@@ -1,0 +1,14 @@
+.mainAppDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileOnClick {
+  width: 50px !important;
+  height: 50px !important;
+  cursor: pointer;
+  background: blue;
+  position: fixed;
+  left: 66.6%;
+  top: 3%;
+}
