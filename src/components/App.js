@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import header from "../assets/img/header.PNG";
-import headerAmericanas from "../assets/img/headerAmericanas.PNG";
+import headerAmericanas from "../assets/img/headerAmericanas.png";
 import Surpreenda from "./meSurpreenda";
 import Profile from "./profile/index.js";
 import "./styles.css";

@@ -5,6 +5,12 @@
   cursor: pointer;
   width: 550px;
   height: 200px;
+  position: absolute;
+  top: 35%;
+  left: 21%;
+  cursor: pointer;
+  width: 500px;
+  height: 200px;
 }
 
 .buttonOne {
@@ -21,10 +27,10 @@
 
 .divButtonClickTwo {
   position: absolute;
-  top: 45%;
-  right: 17%;
+  top: 35%;
+  right: 20%;
   cursor: pointer;
-  width: 550px;
+  width: 500px;
   height: 200px;
 }
 
@@ -41,19 +47,19 @@
 }
 
 .goToHomeLink {
-  width: 200px;
+  width: 220px;
   height: 50px;
   position: absolute;
-  top: 4%;
-  left: 10%;
+  top: 3%;
+  left: 17%;
   cursor: pointer;
 }
 
 .goToProfileLink {
-  width: 200px;
-  height: 50px;
+  width: 180px;
+  height: 49px;
   position: absolute;
-  top: 4%;
+  top: 2%;
   right: 23%;
   cursor: pointer;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import background from "../../assets/img/minha-conta-americanas.png";
+import profilePic from "../../assets/img/profile-pic.jpg";
 import "./styles.css";
 
 function Profile() {
@@ -9,11 +10,11 @@ function Profile() {
       <div className="whiteBox">
         <div className="profileInfoContainer">
           <div className="profilePicContainer">
-            <img src="" alt="" className="profilePic" />
+            <img src={profilePic} alt="profile pic" className="profilePic" />
           </div>
           <div className="infoContainer">
             <section>
-              <h1>Matheus Gomes de Paula</h1>
+              <h1 className="birthdayName title">Matheus Gomes de Paula</h1>
             </section>
             <h5>Via Facebook:</h5>
             <section>
@@ -28,8 +29,8 @@ function Profile() {
                 um presente do gosto deles!
               </p>
             </section>
-            <div className="buttonContainer">
-              <button>Enviar presente!</button>
+            <div>
+              <button className="buttonContainer">Enviar presente!</button>
             </div>
           </div>
         </div>
