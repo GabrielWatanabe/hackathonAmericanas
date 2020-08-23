@@ -3,6 +3,7 @@ import header from "../assets/img/header.PNG";
 import headerAmericanas from "../assets/img/headerAmericanas.PNG";
 import Surpreenda from "./meSurpreenda";
 import Profile from "./profile/index.js";
+import Meri from "./meri/index.js";
 import "./styles.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -34,6 +35,7 @@ export default class App extends Component {
             <Switch>
               <Route path="/surpreenda" component={Surpreenda} />
               <Route path="/profile" component={Profile} />
+              <Route path="/meri" component={Meri} />
               <div>
                 <img className="img" src={headerAmericanas}></img>
                 <Link
