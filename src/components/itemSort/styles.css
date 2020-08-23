@@ -1,0 +1,32 @@
+.imgMain {
+    width: 58%;
+}
+
+.divMain {
+    height: auto;
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonMain {
+    border: 2px solid red;
+    border-radius: 20px;
+    width: 216px;
+    margin: 0;
+    height: 26px;
+    font-size: 16px !important;
+    background-color: red;
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.valueItem {
+    font-size: 25px !important;
+}
+
+.marginItem {
+    margin-bottom: 15px;
+}

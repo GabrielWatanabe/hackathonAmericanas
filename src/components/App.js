@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import header from "../assets/img/header.png";
-import headerAmericanas from "../assets/img/headerAmericanas.png";
+import header from "../assets/img/header.PNG";
+import headerAmericanas from "../assets/img/headerAmericanas.PNG";
 import Surpreenda from "./meSurpreenda";
 import Profile from "./profile/index.js";
 import Meri from "./meri/index.js";
@@ -45,7 +45,10 @@ export default class App extends Component {
                   className="divButtonClickOne"
                   onClick={this.showSurpreenda}
                 />
-                <Link to="/meri" className="divButtonClickTwo" />
+                <Link
+                  to="/meri"
+                  className="divButtonClickTwo"
+                />
               </div>
             </Switch>
           </div>
