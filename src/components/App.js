@@ -6,6 +6,7 @@ import Profile from "./profile/index.js";
 import Meri from "./meri/index.js";
 import "./styles.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Dictaphone from "./speechRecognition/speechRecognition";
 
 export default class App extends Component {
   constructor() {
@@ -28,6 +29,7 @@ export default class App extends Component {
     return (
       <div>
         <img className="img" src={header}></img>
+        <Dictaphone />
         <Router>
           <Link to="/" className="goToHomeLink"></Link>
           <Link to="/profile" className="goToProfileLink"></Link>
