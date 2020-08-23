@@ -1,6 +1,6 @@
-* {
+/* * {
     font-size: 22px;
-}
+} */
 .header {
     height: auto;
     justify-content: center;
@@ -34,6 +34,7 @@
     box-sizing: border-box;
     border: 2px solid red;
     border-radius: 4px;
+    width: 91%;
   }
 
   .dollarSign {
@@ -50,6 +51,7 @@
     border-radius: 16px;
     margin-left: 9%;
     border: 5px solid red;
+    flex-direction: column;
   }
 
   .divImageGiftTrue {
@@ -106,8 +108,8 @@
     border: 2px solid red;
     border-radius: 20px;
     margin: 0;
-    height: 20px;
-    font-size: 16px;
+    height: 26px;
+    font-size: 16px !important;
     color: red;
     margin-right: 5px;
 }
@@ -134,8 +136,22 @@
 .search {
     position: absolute;
     left: 29.5%;
-    width: 20px;
-    top: 66.8%;
-    height: 20px;
+    width: 17px;
+    top: 62.8%;
+    height: 17px;
     cursor: pointer;
+}
+
+.buttonSurpreenda {
+    border: 2px solid red;
+    border-radius: 15px;
+    margin-top: 47%;
+    height: 70px;
+    font-size: 26px !important;
+    color: white;
+    margin-right: 5px;
+    background-color: red;
+    width: 270px;
+    cursor: pointer;
+    font-weight: 700;
 }

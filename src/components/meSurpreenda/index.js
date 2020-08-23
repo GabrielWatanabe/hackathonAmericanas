@@ -25,13 +25,24 @@ export default class Surpreenda extends Component {
     
         this.state = {
           searchItem: false,
-          divImageGift: false
+          searchItems: false,
+          clickButton: false
         };
+
         this.searchItem = this.searchItem.bind(this);
+        this.clickButton = this.clickButton.bind(this);
       }
     
       
     searchItem() {
+        this.setState({
+            searchItems: true,
+            
+          });
+    }
+
+    clickButton() {
+        // console.log(value)
         this.setState({
             searchItem: true,
             divImageGift: true
@@ -41,7 +52,7 @@ export default class Surpreenda extends Component {
     render() {
         return(
             <div className="container"> 
-            <img className="img" src={header}></img>
+            {/* <img className="img" src={header}></img> */}
             <div className="containerAlign">
 
             <img className="surpreenda" src={meSurpreenda}></img>
@@ -55,13 +66,11 @@ export default class Surpreenda extends Component {
                        </input>
                                <img className="search" src={button} onClick={this.searchItem} />
                        <div className="itemsType">
-                       {list.map(function(item) {
-                           return (
-                               <button className="itemType">
-                               {item}
-                               </button>
-                               )
-                            })}
+                        {this.state.searchItems &&
+                         <button  className="itemType">
+                         Chocolates
+                         </button>
+                        }
                         </div>
                     </div>
                     <div className="vl"></div>
@@ -71,6 +80,7 @@ export default class Surpreenda extends Component {
                             <input type="checkbox" className="buttonFrete"></input>
                             <label>Sim</label>
                         </div>
+                        <button onClick={this.clickButton} className="buttonSurpreenda">Me surpreenda!</button>
                     </div>
                     <div className={this.state.divImageGift ? 'divImageGiftTrue' : 'divImageGift'}>
                         {this.state.searchItem ? <ItemSorte></ItemSorte> : <img src={gift} />}
@@ -83,3 +93,25 @@ export default class Surpreenda extends Component {
         )
     }
 }
+//   render() {
+//     return (
+//       <div className="container">
+//         <div className="header">
+//           <div className="filter">
+//             <h1>Quanto você quer pagar?</h1>
+//             <label className="dollarSign">R$</label>
+//             <input className="inputPay" type="text"></input>
+//             <h1>Qual tipo de item você quer?</h1>
+//             <input className="inputPay" type="text"></input>
+//           </div>
+//           <div className="vl"></div>
+//           <div>
+//             <h1>Completar o carrinho para frete grátis?</h1>
+//             <button>Clique aqui</button>
+//             <label>Sim</label>
+//           </div>
+//         </div>
+//       </div>
+//     );
+//   }
+// }

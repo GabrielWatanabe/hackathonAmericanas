@@ -1,37 +1,69 @@
 .divButtonClickOne {
-    position: absolute;
-    top: 49%;
-    left: 34%;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  cursor: pointer;
+  width: 550px;
+  height: 200px;
 }
 
 .buttonOne {
-    background: transparent;
-    border: none !important;
-    font-size:0;
-    width: 160px;
-    height: 47px;
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+  width: 550px;
+  height: 200px;
 }
 
 .buttonOne:hover {
-    border: none !important;
-
+  border: none !important;
 }
 
 .divButtonClickTwo {
-    position: absolute;
-    top: 49%;
-    left: 73%;
+  position: absolute;
+  top: 45%;
+  right: 17%;
+  cursor: pointer;
+  width: 550px;
+  height: 200px;
 }
 
 .buttonTwo {
-    background: transparent;
-    border: none !important;
-    font-size:0;
-    width: 160px;
-    height: 47px;
-
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+  width: 160px;
+  height: 47px;
 }
 
 .img {
-    width: 100%;
+  width: 100%;
+}
+
+.goToHomeLink {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  cursor: pointer;
+}
+
+.goToProfileLink {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 4%;
+  right: 23%;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/Manrope-Medium.ttf") format("truetype");
+}
+
+html * {
+  font-size: 1em !important;
+  font-family: "Manrope" !important;
 }
