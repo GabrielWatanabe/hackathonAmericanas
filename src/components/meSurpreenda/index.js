@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import header from "../../assets/img/header.PNG";
+import header from "../../assets/img/header.png";
 
 import "./styles.css";
 

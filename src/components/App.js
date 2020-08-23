@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import header from "../assets/img/header.PNG";
+import header from "../assets/img/header.png";
 import headerAmericanas from "../assets/img/headerAmericanas.png";
 import Surpreenda from "./meSurpreenda";
 import Profile from "./profile/index.js";
+import Meri from "./meri/index.js";
 import "./styles.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -34,6 +35,7 @@ export default class App extends Component {
             <Switch>
               <Route path="/surpreenda" component={Surpreenda} />
               <Route path="/profile" component={Profile} />
+              <Route path="/meri" component={Meri} />
               <div>
                 <img className="img" src={headerAmericanas}></img>
                 <Link
@@ -41,11 +43,7 @@ export default class App extends Component {
                   className="divButtonClickOne"
                   onClick={this.showSurpreenda}
                 />
-                <Link
-                  to="/meri"
-                  className="divButtonClickTwo"
-                  className="divButtonClickTwo"
-                />
+                <Link to="/meri" className="divButtonClickTwo" />
               </div>
             </Switch>
           </div>
