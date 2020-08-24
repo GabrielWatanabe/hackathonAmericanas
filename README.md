@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center">Welcome to Americanas Indica 👋</h1>
 <p>
 </p>
@@ -70,3 +71,22 @@ Give a ⭐️ if this project helped you!
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+=======
+Este projeto consiste numa apliçacão com funcionalidades "Me surpreenda" e "Méri, assistente virtual"
+
+O serviço "Me surpreenda" consiste numa busca aleatória com filtros definidos no para proporcionar uma experiência inovadora no mercado de compras online.
+
+O serviço "Méri, a assistente virtual", que traz a qualidade de atendimento da loja física para o mundo virtual, proporcionando a indicação de produtos customizados na preferência do cliente.
+
+INSTALAÇÃO
+
+Rodar os comandos no terminal:
+
+- npm install react-dom react-iframe react-router-dom react-scripts react-speech-recognition
+
+Depois de concluído rodar o comando:
+
+- npm start
+
+Nisso irá abrir uma página em seu navegador com aplicação rodando local.
+>>>>>>> 48b07a8fc660a5f2cea3f0811d9e3806d965c7be

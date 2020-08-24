@@ -135,11 +135,11 @@
 
 .search {
     position: absolute;
-    left: 29.5%;
+    left: 30%;
     width: 17px;
-    top: 57.8%;
     height: 17px;
     cursor: pointer;
+    top: 51.8%;
 }
 
 .buttonSurpreenda {
@@ -154,4 +154,13 @@
     width: 270px;
     cursor: pointer;
     font-weight: 700;
+}
+
+.record {
+    width: 25px;
+    position: absolute;
+    left: 28%;
+    /* margin-right: 0px; */
+    cursor: pointer;
+    top: 51.3%;
 }
