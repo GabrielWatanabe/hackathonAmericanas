@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import header from "../assets/img/header.png";
-import headerAmericanas from "../assets/img/headerAmericanas.png";
+import header from "../assets/img/header.PNG";
+import headerAmericanas from "../assets/img/headerAmericanas.PNG";
 import Surpreenda from "./meSurpreenda";
 import Profile from "./profile/index.js";
 import Meri from "./meri/index.js";
@@ -29,7 +29,7 @@ export default class App extends Component {
     return (
       <div>
         <img className="img" src={header}></img>
-        <Dictaphone />
+        {/* <Dictaphone /> */}
         <Router>
           <Link to="/" className="goToHomeLink"></Link>
           <Link to="/profile" className="goToProfileLink"></Link>

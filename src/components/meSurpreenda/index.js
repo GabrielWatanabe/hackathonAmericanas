@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import header from "../../assets/img/header.png";
+import header from "../../assets/img/header.PNG";
 import gift from "../../assets/img/gift.png";
 import meSurpreenda from "../../assets/img/meSurpreenda.PNG";
 import ItemSorte from "../itemSort";
 import button from "../../assets/img/search.png";
+import record from "../../assets/img/record.png";
+import  Dictaphone  from '../speechRecognition/speechRecognition'
 import "./styles.css";
 
 const list = [
@@ -26,10 +28,12 @@ export default class Surpreenda extends Component {
       searchItem: false,
       searchItems: false,
       clickButton: false,
+      record: false,
     };
 
     this.searchItem = this.searchItem.bind(this);
     this.clickButton = this.clickButton.bind(this);
+    this.recordSound = this.recordSound.bind(this);
   }
 
   searchItem() {
@@ -46,9 +50,19 @@ export default class Surpreenda extends Component {
     });
   }
 
+  recordSound() {
+    this.setState({
+        record: true,
+      });
+    return <Dictaphone />
+  }
+
+  
+
   render() {
     return (
       <div className="container">
+          {/* {this.state.record ? */}
         {/* <img className="img" src={header}></img> */}
         <div className="containerAlign">
           <img className="surpreenda" src={meSurpreenda}></img>
@@ -60,6 +74,8 @@ export default class Surpreenda extends Component {
               <h1>Qual tipo de item você quer?</h1>
               <input className="inputPay" type="text"></input>
               <img className="search" src={button} onClick={this.searchItem} />
+              <Dictaphone {...this.props} />
+              {/* <img className="record" src={record} onClick={() => <Dictaphone />} /> */}
               <div className="itemsType">
                 {this.state.searchItems && (
                   <button className="itemType">Chocolates</button>
