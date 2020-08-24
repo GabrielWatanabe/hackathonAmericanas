@@ -1,68 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Welcome to Americanas Indica 👋</h1>
+<p>
+</p>
 
-## Available Scripts
+> Soluções pensadas em aumentar a assertividade de oferecimento de produtos. As soluções foram pensadas em atender o maior público possível e ainda ser inclusiva, sustentável e rentável. Propomos soluções chamadas de "Me surpreenda!", "Méri", "Presenteie seu amigo", "Compra recorrente" e "Selo de retorno".
 
-In the project directory, you can run:
+## Author
 
-### `yarn start`
+👤 **Matheus Gomes, Thais Rabelo, Gabriel Watanabe, Camille Banca e Lannara Natyelle**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Github: [@matheusgomes062](https://github.com/matheusgomes062) - [@thaisrabelo](https://github.com/thaisrabelo) - [@GabrielWatanabe](https://github.com/GabrielWatanabe)
+* LinkedIn: [@mgodev](https://linkedin.com/in/mgodev) - [@thais-rabelo](https://www.linkedin.com/in/thais-rabelo/) - [@gabriel-watanabe](https://www.linkedin.com/in/gabriel-watanabe/) -  [@camillelabanca](https://www.linkedin.com/in/camillelabanca/) - [@lannara-natyelle](https://www.linkedin.com/in/lannara-natyelle/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+# Usage Command
 
-### `yarn test`
+Para utilizar a extensão é necessário clonar o repositório
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Em seguida é necessário habilitar a opção de desenvolvedor das extensões:
 
-### `yarn build`
+- Rodar os comandos no terminal:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ```npm install react-dom react-iframe react-router-dom react-scripts react-speech-recognition```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Depois de concluído rodar o comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ```npm start```
 
-### `yarn eject`
+- Nisso irá abrir uma página em seu navegador com aplicação rodando local.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![](https://i.imgur.com/nJUnMeU.gif)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](https://i.imgur.com/Dm4sM70.gif)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![](https://i.imgur.com/TNiHD07.gif)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![](https://i.imgur.com/LM0b8zT.gif)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Description
 
-### Code Splitting
+Olá! Somos o Time 8 e esta é uma parte da solução para o **Summit Hack - Americanas**, promovido pela **Shawee**!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Aqui temos algumas funcionalidades, sendo estas: "**Me surpreenda**", "**Méri, assistente virtual**" e "**Presentei-e seus amigos**".
 
-### Analyzing the Bundle Size
+Vamos falar um pouco dessas funcionalidades!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- **Me surpreenda!**
+  - Tem por objetivo, oferecer um produto aleatório com base nas preferências dos usuário. Seja para presentear alguém, seja para receber algo inusitado em casa, ou seja para completar o carrinho para ser elegível ao frete grátis!
+- **Méri, assistente virtual**
+  - Já pensou em comprar online com os benefícios de comprar na loja física? Pois bem, a Méri é a solução perfeita para o problema, essa assistente virtual oferece produtos com base na descrição fornecida pelo usuário, isso é muito importante até mesmo para as pessoas com deficiência visual, pois podem de forma prática requisitar um produto, apenas conversando com a Méri!
+- **Presentei-e seus amigos**
+  - A americanas permite que você logue no site pelo facebook, que tal aproveitarmos isso para presentear seus amigos? No dia do aniversário deles que tal mandar um  presente único? Essa é a proposta do *presentei-e seus amigos* , no aniversário deles é possível escolher enviar um presente do preço que você achar melhor e que seja único para eles, baseado na pesquisa de produtos de cada um!
 
-### Making a Progressive Web App
+Além desses, temos algumas funcionalidades a mais: 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- **Política de retorno**: compre um produto com o selo de retornável, retorne a embalagem para a americanas e ganhe desconto na próxima compra!
+- **Acessibilidade do site para deficientes visuais**: colocamos no código uma funcionalidade de **speech-to-text** que permite o usuário falar e o áudio ser transcrito para o input de texto! Facilita a sua vida e atende mais pessoas!
+- **Completar frete grátis?**: Cansado de faltar 10 reais para completar o frete grátis e não saber o que comprar? Com o *completar o frete grátis* a americanas sugere um produto de seu gosto no preço para completar o frete grátis. (obs: funcionalidade inclusa no "Me surpreenda!").
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+link do design: https://xd.adobe.com/view/349ee712-ea7c-4300-67fa-b0d8f08c6f24-42af/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Aplicação feita com ReactJs, NodeJS, CSS, IBM-WATSON e react-speech-recognition.
 
-### `yarn build` fails to minify
+## Show your support
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
